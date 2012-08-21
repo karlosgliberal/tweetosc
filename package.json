@@ -1,0 +1,11 @@
+{
+    "name": "tweetosc"
+  , "version": "0.0.2"
+  , "private": true
+  , "dependencies": {
+      "ntwitter": "*"
+    , "commander": "*"
+    , "http": "*"
+    , "omgosc": "*"
+  }
+}
