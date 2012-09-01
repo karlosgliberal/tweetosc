@@ -13,12 +13,13 @@ var   twitter = require('ntwitter');
    var y = 0;
    var pos = 0;
    var broadcast = [];
-   var ip_rang = 'x.x.x.x'
+   var ip_rang = 'x.x.x.x';
+   var track = 'soleu'
    broadcast['broadcast'] = true;
    //define ip
-   var sender = new osc.UdpSender('10.51.51.255', 7777, broadcast);
+   var sender = new osc.UdpSender(ip_rang, 7777, broadcast);
 
-   twit.stream('statuses/filter', {track:'mod8'}, function(stream) {
+   twit.stream('statuses/filter', {track:track}, function(stream) {
       stream.on('data', function (data) {
       var text = data.text;
       var palabras = text.split(" ");
@@ -31,7 +32,7 @@ var   twitter = require('ntwitter');
                sender.send('/osc_data', 's',  [text[i]]);
              };
              sender.send('/numero', 'i',  [text.length]);
-             sender.send('/flor', 's',  [data.text+ ' flor']);
+
              if(x !== 320){
                x = x+10;
                console.log('x: '+ x);

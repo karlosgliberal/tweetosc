@@ -17,7 +17,6 @@ program
   });
 
 if(program.palabra){
-    
     twit
       .verifyCredentials(function (err, data) {
       }).updateStatus(program.palabra,
