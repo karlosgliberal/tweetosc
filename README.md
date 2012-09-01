@@ -15,5 +15,22 @@ Ficheros
    * El segundo ejemplo lo realice con el gran [txo](http://www.elurmaluta.net/) en este caso queríamos que dependiendo de la palabra (no este implementado en el código) una animación de un cuervo controlado por Txo, se moviera en un mapping que relizamos. Las keys tipo /md8key/ctrl_layer_position_x/0', 'f',  [x+10] son las que pide el modul8. 
 * envia_twitter.js: Es una utilidad de linea de comandos que nos permitía enviar los twetters desde la consola acelerando las pruebas.
 
+Install
+-------
+Para instalarlo tienes que tener instalado node.js (la version o 6.x, o 8.x) [node.js](http://nodejs.org)
+
+
+Descargar o cloner el repositorio https://github.com/karlosgliberal/tweetosc.git en tu maquina
+
+  git clone https://github.com/karlosgliberal/tweetosc.git 
+
+  cd tweetosc/
+
+  node summeroflabs.js 
+
+y para enviar tweets 
+
+  node -f 'la frase con el hashtag #quequieras'
+
 
 En resumen, la potencia de node.js para trabajar en ámbitos diferentes es brutal.
