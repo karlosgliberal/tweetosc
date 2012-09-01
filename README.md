@@ -20,7 +20,7 @@ Install
 Para instalarlo tienes que tener instalado node.js (la version o 6.x, o 8.x) [node.js](http://nodejs.org)
 
 
-Descargar o cloner el repositorio https://github.com/karlosgliberal/tweetosc.git en tu maquina
+Descargar o clonar el repositorio https://github.com/karlosgliberal/tweetosc.git en tu máquina
 
   git clone https://github.com/karlosgliberal/tweetosc.git 
 
